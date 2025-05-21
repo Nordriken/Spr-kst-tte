@@ -2,8 +2,7 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>Undervisningsportalen</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.321.0/font/lucide.css">
+  <title>Verksted NKUL 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -21,7 +20,7 @@
       border-radius: 22px;
       box-shadow: 0 8px 40px rgba(0,0,0,0.25);
       padding: 2.5rem 2.2rem;
-      max-width: 470px;
+      max-width: 480px;
       width: 95vw;
       margin: 3rem auto;
     }
@@ -49,36 +48,42 @@
     .portal-link {
       display: flex;
       align-items: center;
-      background: rgba(90, 120, 210, 0.10);
-      border-radius: 12px;
-      padding: 1.1rem 1.3rem;
+      background: rgba(90, 120, 210, 0.09);
+      border-radius: 15px;
+      padding: 0.5rem 1.1rem 0.5rem 0.5rem;
       text-decoration: none;
       color: #fff;
-      font-size: 1.15rem;
+      font-size: 1.14rem;
       font-weight: 500;
       box-shadow: 0 1.5px 8px rgba(65,110,180,0.06);
       transition: background 0.17s, box-shadow 0.15s, transform 0.1s;
       gap: 1.1rem;
       position: relative;
+      min-height: 72px;
     }
     .portal-link:hover {
-      background: rgba(255, 227, 170, 0.13);
-      box-shadow: 0 6px 30px rgba(255, 240, 180, 0.13);
+      background: rgba(255, 227, 170, 0.15);
+      box-shadow: 0 6px 30px rgba(255, 240, 180, 0.10);
       transform: translateY(-1.5px) scale(1.025);
       color: #ffe3aa;
     }
-    .portal-emoji {
-      font-size: 2rem;
-      margin-right: 0.5rem;
-      display: inline-flex;
-      align-items: center;
+    .portal-img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 0.9rem;
+      box-shadow: 0 3px 10px rgba(60,60,80,0.16);
+      border: 2px solid #fff2;
+      flex-shrink: 0;
+      background: #fff4;
     }
-    .portal-icon {
-      font-size: 2rem;
-      margin-right: 0.5rem;
-      opacity: 0.85;
-      display: inline-flex;
-      align-items: center;
+    .link-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.14rem;
+      font-weight: 600;
     }
     .gh-link {
       margin-top: 2.2rem;
@@ -96,12 +101,15 @@
       text-decoration: underline;
       color: #c5f1ff;
     }
-    @media (max-width: 540px) {
+    @media (max-width: 600px) {
       .portal-container {
         padding: 1.3rem 0.7rem;
         max-width: 99vw;
       }
-      h1 { font-size: 1.2rem; }
+      h1 { font-size: 1.17rem; }
+      .portal-link { font-size: 1rem; }
+      .portal-img { width: 42px; height: 42px; margin-right: 0.6rem; }
+      .link-text { font-size: 1.01rem; }
     }
   </style>
 </head>
@@ -111,25 +119,25 @@
     <p>Velg en læringsside eller et verktøy:</p>
     <div class="link-list">
       <a class="portal-link" href="https://nordriken.github.io/Spanskl-rern/" target="_blank">
-        <span class="portal-emoji" title="Spansk flagg">🇪🇸</span>
-        Spansklæreren
+        <img class="portal-img" src="https://as1.ftcdn.net/v2/jpg/02/51/51/42/1000_F_251514287_AJArXubfpkfbmXgmX86Q1MfBNBdPCwHC.jpg" alt="Spansk flagg">
+        <span class="link-text">Spansklæreren</span>
       </a>
       <a class="portal-link" href="https://nordriken.github.io/Arabisknaturfag/" target="_blank">
-        <i class="portal-icon lucide lucide-leaf" title="Naturfag"></i>
-        Naturfagslærer med arabisk tolk
+        <img class="portal-img" src="https://as1.ftcdn.net/v2/jpg/02/19/84/86/1000_F_219848647_dRWZu9bw6ejvgkCPfPExycrGOaJeqBwJ.jpg" alt="Natur">
+        <span class="link-text">Naturfagslærer med arabisk tolk</span>
       </a>
       <a class="portal-link" href="https://nordriken.github.io/Intervjubotpaaengelsk/" target="_blank">
-        <i class="portal-icon lucide lucide-user-round" title="Intervjuer"></i>
-        Jobbintervju på engelsk
+        <img class="portal-img" src="https://as1.ftcdn.net/v2/jpg/04/30/49/82/1000_F_430498249_LH7FVeMZRvgArL6sNod4PdxOSzSLMtOX.jpg" alt="Intervju">
+        <span class="link-text">Jobbintervju på engelsk</span>
       </a>
       <a class="portal-link" href="https://nordriken.github.io/Historie/" target="_blank">
-        <i class="portal-icon lucide lucide-hourglass" title="Timeglass"></i>
-        Den franske revolusjon og opplysningstiden
+        <img class="portal-img" src="https://as1.ftcdn.net/v2/jpg/02/68/39/90/1000_F_268399090_U6RH8gQ9ZX8ceuTYco2f2GTk5XGG1JTL.jpg" alt="Timeglass">
+        <span class="link-text">Den franske revolusjon og opplysningstiden</span>
       </a>
     </div>
     <div class="gh-link">
       <a href="https://github.com/nordriken" target="_blank">
-        <i class="lucide lucide-github"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="margin-right: 0.2em;vertical-align:middle" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.6V22"></path></svg>
         Min GitHub-profil
       </a>
     </div>
