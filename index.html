@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Undervisningsportalen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.321.0/font/lucide.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #1e232a;
+      color: #f7f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .portal-container {
+      background: rgba(35,40,50,0.98);
+      border-radius: 22px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+      padding: 2.5rem 2.2rem;
+      max-width: 470px;
+      width: 95vw;
+      margin: 3rem auto;
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #ffe3aa;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-top: 0;
+      color: #b7c2e7;
+      font-size: 1.09rem;
+      margin-bottom: 1.4rem;
+    }
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .portal-link {
+      display: flex;
+      align-items: center;
+      background: rgba(90, 120, 210, 0.10);
+      border-radius: 12px;
+      padding: 1.1rem 1.3rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 500;
+      box-shadow: 0 1.5px 8px rgba(65,110,180,0.06);
+      transition: background 0.17s, box-shadow 0.15s, transform 0.1s;
+      gap: 1.1rem;
+      position: relative;
+    }
+    .portal-link:hover {
+      background: rgba(255, 227, 170, 0.13);
+      box-shadow: 0 6px 30px rgba(255, 240, 180, 0.13);
+      transform: translateY(-1.5px) scale(1.025);
+      color: #ffe3aa;
+    }
+    .portal-emoji {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+    }
+    .portal-icon {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      opacity: 0.85;
+      display: inline-flex;
+      align-items: center;
+    }
+    .gh-link {
+      margin-top: 2.2rem;
+      text-align: center;
+      font-size: 1.06rem;
+    }
+    .gh-link a {
+      color: #6ed7fa;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3em;
+    }
+    .gh-link a:hover {
+      text-decoration: underline;
+      color: #c5f1ff;
+    }
+    @media (max-width: 540px) {
+      .portal-container {
+        padding: 1.3rem 0.7rem;
+        max-width: 99vw;
+      }
+      h1 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="portal-container">
+    <h1>Undervisningsportalen</h1>
+    <p>Velg en læringsside eller et verktøy:</p>
+    <div class="link-list">
+      <a class="portal-link" href="https://nordriken.github.io/Spanskl-rern/" target="_blank">
+        <span class="portal-emoji" title="Spansk flagg">🇪🇸</span>
+        Spansklæreren
+      </a>
+      <a class="portal-link" href="https://nordriken.github.io/Arabisknaturfag/" target="_blank">
+        <i class="portal-icon lucide lucide-leaf" title="Naturfag"></i>
+        Naturfagslærer med arabisk tolk
+      </a>
+      <a class="portal-link" href="https://nordriken.github.io/Intervjubotpaaengelsk/" target="_blank">
+        <i class="portal-icon lucide lucide-user-round" title="Intervjuer"></i>
+        Jobbintervju på engelsk
+      </a>
+      <a class="portal-link" href="https://nordriken.github.io/Historie/" target="_blank">
+        <i class="portal-icon lucide lucide-hourglass" title="Timeglass"></i>
+        Den franske revolusjon og opplysningstiden
+      </a>
+    </div>
+    <div class="gh-link">
+      <a href="https://github.com/nordriken" target="_blank">
+        <i class="lucide lucide-github"></i>
+        Min GitHub-profil
+      </a>
+    </div>
+  </div>
+</body>
+</html>
